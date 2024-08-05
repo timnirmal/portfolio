@@ -22,11 +22,11 @@ export default function RootLayout({
         <html lang="en">
         <body className={inter.className}>
         <div className="absolute top-0 right-0 pr-20 pt-5">
-        <NavigationMenuDemo />
+        {/*<NavigationMenuDemo />*/}
         </div>
         <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
         >

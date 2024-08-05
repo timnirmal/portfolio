@@ -1,6 +1,6 @@
-import { cn } from "@/utils/cn";
-import clsx from "clsx";
+import {cn} from "@/utils/cn";
 import React from "react";
+
 
 export const Meteors = ({
                             number,
@@ -10,6 +10,8 @@ export const Meteors = ({
     className?: string;
 }) => {
     const meteors = new Array(number || 20).fill(true);
+
+
     return (
         <>
             {meteors.map((el, idx) => (
@@ -29,9 +31,11 @@ export const Meteors = ({
                         left: `${Math.random() * 80}%`, // Random left position from 0% to 100%
                         animationDelay: `${Math.random() * (0.8 - 0.2) + 0.2}s`,
                         animationDuration: `${Math.floor(Math.random() * (10 - 2) + 2)}s`,
+                        opacity: Math.random() * (0.8 - 0.2) + 0.2,
                     }}
                 ></span>
             ))}
+
         </>
     );
 };
