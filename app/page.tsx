@@ -58,7 +58,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center">
                 {/* Existing elements */}
-                <a href="https://drive.google.com/file/d/11fk-aXptMez6usyeBEUPcuc1uJU6MNV2/view?usp=sharing"
+                <a href="https://drive.google.com/file/d/1nWFMUf3mjRHx20gvDhhu1zrWKn-SJ22e/view?usp=drive_link"
                    target="_blank" rel="noopener noreferrer"
                    className="mt-5 bg-gray-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
                     View Resume
