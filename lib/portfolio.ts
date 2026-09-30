@@ -20,6 +20,11 @@ export const skillGroups = [
       "Generative AI",
       "RAG",
       "OpenAI, Claude, Hugging Face",
+      "Context engineering & structured outputs",
+      "Tool calling & MCP",
+      "Multi-agent orchestration",
+      "Persistent state & failure recovery",
+      "Human approvals & execution tracing",
     ],
   },
   {

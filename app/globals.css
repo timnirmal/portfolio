@@ -2,6 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+.runtime-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 36px;
+  margin-bottom: 70px;
+  background: #e9eddf;
+  border: 1px solid #d5ddc8;
+  border-radius: 6px;
+}
+.runtime-feature p,
+.runtime-feature li {
+  font-size: 14px;
+  line-height: 1.85;
+}
+.runtime-feature .runtime-role {
+  font-weight: 600;
+  font-size: 12px;
+  margin-block: 16px;
+}
+.runtime-feature .button {
+  margin-top: 20px;
+}
+.runtime-feature ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 18px;
+}
+.experience-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  padding-block: 26px;
+  border-top: 1px solid #dcded4;
+}
+.experience-row p,
+.community-note p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #596650;
+}
+.experience-row span {
+  display: block;
+  font: 12px monospace;
+  margin-top: 10px;
+}
+.community-note {
+  margin-top: 35px;
+  padding: 28px;
+  background: #e9eddf;
+  border-radius: 5px;
+}
+@media (max-width: 760px) {
+  .runtime-feature {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 24px;
+    margin-bottom: 45px;
+  }
+  .experience-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 :root {
   --background: 45 20% 96%;
   --foreground: 150 13% 12%;

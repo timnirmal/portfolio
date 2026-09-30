@@ -4,6 +4,8 @@ import Image from "next/image";
 import { ArrowDown, ArrowUpRight, Github, Linkedin, Code2 } from "lucide-react";
 import { skillGroups, profile } from "@/lib/portfolio";
 import { Navigation } from "@/components/portfolio-navigation";
+import { Career } from "@/components/career";
+import { AgentRuntimeFeature } from "@/components/agentruntime-feature";
 
 export default function Home() {
   return (
@@ -16,8 +18,8 @@ export default function Home() {
         <section className="hero wrap" aria-labelledby="intro-title">
           <div className="hero-copy">
             <p className="eyebrow">
-              <span className="status-dot" /> AI ENGINEER / MACHINE LEARNING /
-              APPLIED AI
+              <span className="status-dot" /> APPLIED AI ENGINEER / AGENTIC
+              SYSTEMS
             </p>
             <h1 id="intro-title">
               Turning complex
@@ -27,9 +29,10 @@ export default function Home() {
               <span>useful intelligence.</span>
             </h1>
             <p className="hero-intro">
-              Hi, I’m <strong>Thimira Nirmal.</strong> I build AI systems and
-              thoughtful digital experiences, connecting machine learning with
-              real-world problems.
+              Hi, I’m <strong>Thimira Nirmal.</strong> An applied AI engineer
+              and technical founder with 5+ years across AI/ML and software
+              engineering. I build production AI agents, LLM applications, and
+              reliable workflows.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#work">
@@ -74,12 +77,19 @@ export default function Home() {
                 ✳
               </span>
               <div className="portrait-caption">
-                <span>AI agents · Language models · Machine learning</span>
+                <a
+                  href="https://agentruntime.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Founder & AI Platform Engineer · AgentRuntime ↗
+                </a>
                 <Code2 size={19} />
               </div>
             </div>
           </div>
         </section>
+        <AgentRuntimeFeature />
         <div className="discipline-strip">
           <div className="wrap">
             <span>ARTIFICIAL INTELLIGENCE</span>
@@ -126,18 +136,24 @@ export default function Home() {
             </div>
             <div className="about-copy">
               <p>
-                I’m Thimira, an AI engineer and computer engineering graduate
-                from the University of Sri Jayewardenepura.
+                I’m an applied AI engineer and technical founder focused on
+                agentic systems and AI platforms. I translate business
+                requirements into reliable architectures and working
+                applications.
               </p>
               <p>
-                My work brings together machine learning, language models, and
-                full stack development. I enjoy taking a problem from an early
-                experiment to an application people can interact with.
+                At AgentRuntime, I’m building the execution layer for
+                long-running AI workflows. Previously, I developed
+                customer-intelligence features at Velaris, delivered LLM
+                applications at Veracity Group, and worked on machine learning
+                pipelines at LSEG.
               </p>
               <p>
-                Through freelance projects and machine learning work at LSEG,
-                I’ve learned to start with the problem, stay curious, and make
-                complex ideas easier to use.
+                Alongside these roles, I’ve completed 200+ research and industry
+                projects as an independent AI/ML and software engineer. I hold a
+                BSc Engineering (Hons) in Computer Engineering from the
+                University of Sri Jayewardenepura, with a minor in Data
+                Management (2019–2024).
               </p>
               <a className="text-link" href={profile.linkedin}>
                 More about my background <ArrowUpRight size={17} />
@@ -145,6 +161,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Career />
         <section
           id="expertise"
           className="section wrap"
